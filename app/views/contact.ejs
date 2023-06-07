@@ -1,0 +1,61 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+    <!--<img src="img/logo.png" alt="logo">-->
+
+<main class="container">
+<div class="jumbotron">
+
+    </div>
+    <main>
+        <div id="layout">
+                <h1 style="text-align: center;"><%= title %></h1>
+                <br>
+                <p style="text-align: center;">For enquiry, please feel free to leave your message and information below:</p>
+
+                <fieldset>  
+                <br>
+                <form action="/" method="get">
+                <p>
+                    <label for="FName">First Name:</label>
+                     <input id="FName" name="FName" size="25" type="text" required="required">
+                </p><br>
+                <p>
+                    <label for="LName">Last Name:</label>
+                     <input id="LName" name="LName" size="25" type="text" required="required">
+                </p><br>
+                <p>
+                    <label for="Email">Email Address:</label>
+                     <input id="Email" name="Email" size="25" type="email" placeholder="a@abc.ca" required="required">
+                </p><br>
+                <p>
+                    <label for="Phone">Contact Number:</label>
+                     <input id="Phone" name="Phone" size="20" type="number required="required">
+                </p><br>          
+                <p>
+                    <label for="Area">Your District:   </label>
+                    <input id="area" name="DT" type="radio" value="DT">Toronto Downtown &nbsp;
+                    <input id="area" name="NY" type="radio" value="NY">North York &nbsp;
+                    <input id="area" name="SC" type="radio" value="SC">Scarborough &nbsp;
+                    <input id="area" name="MH" type="radio" value="MH">Markham &nbsp;
+                </p><br>
+                <p>
+                        <label for="SpecialReq">Special Requirements:</label><br>
+                        <textarea id="SpecialReq" cols="50" name="SpecialReq" rows="8">---Additional information you may query ---</textarea>
+                </p><br>
+                <p> <input type="submit" value="Submit"></p>
+            </form>
+        </fieldset>	
+        <br>
+        <p style="text-align: center;">Or you can contact me at +1 (647)589-2563 or email to sean123@gmail.com. </p>		
+        <br>
+        </div>
+        </main>
+</main>
+
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+
+
+
+   
